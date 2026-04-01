@@ -1,76 +1,30 @@
-# frontend
+# Ticket Agent Ollama Frontend
 
-Scaffolded with Vuetify CLI.
+![Vue.js](https://img.shields.io/badge/Vue-3.x-42b883?logo=vue&logoColor=white)
+![Vuetify](https://img.shields.io/badge/Vuetify-4.x-1867C0?logo=vuetify&logoColor=white)
+![Yarn](https://img.shields.io/badge/Yarn-1.x-2C8EBB?logo=yarn&logoColor=white)
 
-## ❗️ Documentation
+## Descripción
+Proyecto de aplicación web construido con **Vue 3** y **Vuetify 4**, utilizando **Yarn** como gestor de paquetes, para la demostración del uso de un agente de IA con Ollama para el análisis de tickets de compra de supermercado.
 
-- Primary docs: https://vuetifyjs.com/
-- Getting started guide: https://vuetifyjs.com/en/getting-started/installation/
-- Community support: https://community.vuetifyjs.com/
-- Issue tracker: https://issues.vuetifyjs.com/
+## Características
+- Formulario para cargar archivos PDF
+- Chat para interactuar con agente de IA
+- Tabla para consultar los tickets de compra del usuario
 
-## 🧱 Stack
+## Instalación
 
-- Framework: Vue 3 + Vite
-- UI Library: Vuetify
-- Language: TypeScript
-- Package manager: yarn
+1. Clonar el repositorio:
 
-## 🧭 Start Here
-
-- Main entry: `src/main.ts`
-- Main app component: `src/App.vue`
-- Main styles: `src/styles/`
-- Plugin setup: `src/plugins/`
-
-## 📁 Project Structure
-
-- `src/main.ts` — application entry point
-- `src/App.vue` — root component
-- `src/components/` — reusable Vue components
-- `src/plugins/` — plugin registration and setup
-- `src/styles/` — global styles and theme settings
-- `public/` — static public files
-
-## ✨ Enabled Features
-
-- Vue Router
-
-## 💿 Install
-
-Use your selected package manager (yarn) to install dependencies:
-
+```bash
+git clone https://github.com/Alexis-Santana-Vega/ticket-agent-ollama-frontend
+cd ticket-agent-ollama-frontend
+```
+2. Instalar dependencias:
 ```bash
 yarn install
 ```
-
-## 🚀 Quick Start
-
+3. Ejecutar proyecto en modo desarrollo
 ```bash
-yarn install
 yarn dev
 ```
-
-## 🏗️ Build
-
-```bash
-yarn build
-```
-
-## 🧪 Available Scripts
-
-- `yarn dev`
-- `yarn build`
-- `yarn preview`
-- `yarn build-only`
-- `yarn type-check`
-
-## 💪 Support Vuetify Development
-
-This project uses Vuetify - an MIT licensed Open Source project. We are glad to welcome contributors and any support for ongoing development:
-
-- Contribute to Vuetify and ecosystem projects: https://github.com/vuetifyjs
-- Request enterprise support: https://support.vuetifyjs.com/
-- Sponsor on GitHub: https://github.com/sponsors/vuetifyjs
-- Support on Open Collective: https://opencollective.com/vuetify
-"# ticket-agent-ollama-frontend" 
