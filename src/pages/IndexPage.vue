@@ -11,11 +11,11 @@
             <v-row density="comfortable">
               <v-col cols="12">
                 <v-file-input v-model="newFile" label="Selecciona un archivo (PDF, PNG, JPEG)"
-                  accept=".pdf,.png,.jpg,.jpeg" />
+                  accept=".pdf,.png,.jpg,.jpeg" :disabled="isUploading" />
               </v-col>
               <v-col cols="12">
                 <v-btn @click="submitTicket" color="primary" block size="large" :loading="isUploading"
-                  prepend-icon="mdi-upload">
+                  prepend-icon="mdi-upload" :disabled="!newFile || isUploading">
                   Subir Ticket
                 </v-btn>
               </v-col>
@@ -23,7 +23,7 @@
 
 
 
-            <v-alert v-if="uploadMessage" :type="uploadMessage.type" class="mt-4" dismissible>
+            <v-alert v-if="uploadMessage" :type="uploadMessage.type" class="mt-4" closable>
               {{ uploadMessage.text }}
             </v-alert>
           </v-card-text>
@@ -78,11 +78,11 @@
             <v-row no-gutters>
               <v-col cols="12" sm="10">
                 <v-text-field v-model="newMessage" label="Escribe tu pregunta..." outlined
-                  @keyup.enter="sendMessageHandler" hide-details />
+                  @keyup.enter="sendMessageHandler" hide-details :disabled="isChattting"/>
               </v-col>
               <v-col cols="12" sm="2" class="pl-2">
                 <v-btn @click="sendMessageHandler" color="tertiary" block size="large" :loading="isChattting"
-                  prepend-icon="mdi-send-variant">
+                  prepend-icon="mdi-send-variant" :disabled="!newMessage.trim() || isChattting">
                 </v-btn>
               </v-col>
             </v-row>
